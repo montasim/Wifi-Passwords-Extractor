@@ -33,8 +33,8 @@ for wifi in wifis:
     try:
         print(f'Name : {wifi}, Password : {results[0]}')
         #   saving subdomains in a file
-        # file = open('wifi password.txt', "a", encoding="utf8")
-        # file.write(f'Name : {wifi}, Password : {results[0]}' + '\n')
+        file = open('wifi password.txt', "a", encoding="utf8")
+        file.write(f'Name : {wifi}, Password : {results[0]}' + '\n')
     except IndexError:
         print(f'Name : {wifi}, Password : Not found!')
 
